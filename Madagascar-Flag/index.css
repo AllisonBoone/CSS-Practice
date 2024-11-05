@@ -1,0 +1,39 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+:root {
+  --flag-height: 150px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag {
+  height: var(--flag-height);
+  width: calc(var(--flag-height) * 3 / 2);
+  display: flex;
+}
+
+.white {
+  background: white;
+  width: calc(var(--flag-height) / 2);
+}
+
+.red {
+  background: red;
+  height: calc(var(--flag-height) / 2);
+  width: var(--flag-height);
+}
+
+.green {
+  background: green;
+  height: calc(var(--flag-height) / 2);
+}

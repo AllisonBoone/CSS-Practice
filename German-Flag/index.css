@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --flag-height: 150px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag {
+  /* display: flex;
+    flex-direction: column; */
+  display: grid;
+  height: var(--flag-height);
+  width: calc(var(--flag-height) * 5 / 3);
+  background: black;
+}
+
+.black {
+  background: black;
+}
+
+.red {
+  background: red;
+}
+
+.yellow {
+  background: yellow;
+}

@@ -1,0 +1,41 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container,
+.circle {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.black {
+  height: 200px;
+  width: 200px;
+  background: black;
+}
+
+.blue {
+  height: 150px;
+  width: 150px;
+  background: blue;
+}
+
+.red {
+  height: 100px;
+  width: 100px;
+  background: red;
+}
+
+.yellow {
+  height: 50px;
+  width: 50px;
+  background: yellow;
+}
