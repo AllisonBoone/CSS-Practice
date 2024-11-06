@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --flag-height: 150px;
+  --flag-width: calc(var(--flag-height) * 8 / 5);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag {
+  height: var(--flag-height);
+  width: var(--flag-width);
+  background: blue;
+  display: flex;
+  position: relative;
+}
+
+.stripe {
+  background: yellow;
+  height: calc(var(--flag-height) * 1 / 5);
+}
+
+.stripe-yellow1 {
+  align-self: center;
+  width: 100%;
+}
+
+.stripe-yellow2 {
+  width: var(--flag-height);
+  position: absolute;
+  transform: rotate(90deg);
+  top: calc(var(--flag-height) * 4 / 10);
+  right: calc(var(--flag-width) * 5 / 16);
+}
