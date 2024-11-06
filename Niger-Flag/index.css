@@ -1,0 +1,47 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+:root {
+  --flag-height: 200px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag {
+  height: var(--flag-height);
+  width: calc(var(--flag-height) * 7 / 6);
+  display: grid;
+}
+
+.orange {
+  background: orangered;
+}
+
+.white {
+  background: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green {
+  background: green;
+}
+
+.circle {
+  background: orangered;
+  height: calc(var(--flag-height) / 3 * 0.85);
+  width: calc(var(--flag-height) / 3 * 0.85);
+  border-radius: 50%;
+  position: absolute;
+}
