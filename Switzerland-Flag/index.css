@@ -3,3 +3,38 @@ body {
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --flag-hw: 200px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag {
+  height: var(--flag-hw);
+  width: var(--flag-hw);
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.rect1 {
+  height: calc(var(--flag-hw) * 3 / 16);
+  width: calc(var(--flag-hw) * 5 / 8);
+  background: white;
+}
+
+.rect2 {
+  height: calc(var(--flag-hw) * 5 / 8);
+  width: calc(var(--flag-hw) * 3 / 16);
+  background: white;
+  display: flex;
+  position: absolute;
+}
